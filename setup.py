@@ -24,7 +24,7 @@ ENTRY_POINTS = {
         # Syntax: category name = path.to.package.containing.widgets
         # Widget category specification can be seen in
         #    orangecontrib/datafusion/widgets/__init__.py
-        'Time Series = orangecontrib.timeseries.widgets',
+        '时序分析(Time Series) = orangecontrib.timeseries.widgets',
     ),
 
     # Widget help
@@ -36,7 +36,7 @@ ENTRY_POINTS = {
 
 if __name__ == '__main__':
     setup(
-        name="Orange3-Timeseries",
+        name="Orange3-Timeseries-zh",
         description="Orange3 add-on for exploring time series and sequential data.",
         long_description=LONG_DESCRIPTION,
         version=VERSION,
@@ -64,7 +64,7 @@ if __name__ == '__main__':
                                          "datasets/*.csv"],
         },
         install_requires=[
-            'Orange3',
+            'Orange3-zh',
             'statsmodels>=0.10.0',
             'pandas',  # statsmodels requires this but doesn't have it in dependencies?
             'pandas_datareader',
